@@ -30,7 +30,7 @@ app.post('/webhook', async (req, res) => {
   const { data } = await axios.post(
     'https://api.anthropic.com/v1/messages',
     {
-      model: 'claude-sonnet-4-6',
+      model: 'claude-sonnet-4-5',,
       max_tokens: 300,
       system: `Sos el asistente del Laboratorio Clínico.
 Respondé preguntas sobre turnos, resultados y precios.

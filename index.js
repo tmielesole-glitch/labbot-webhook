@@ -57,4 +57,4 @@ Si el caso es urgente o necesita atención humana, respondé solo: ESCALAR`,
   );
 });
 
-app.listen(3000, () => console.log('Servidor corriendo'));
+app.listen(process.env.PORT || 3000, () => console.log('Servidor corriendo'));

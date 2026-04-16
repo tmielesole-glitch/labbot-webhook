@@ -27,6 +27,7 @@ app.post('/webhook', async (req, res) => {
 
     const texto  = msg.text.body;
     const numero = msg.from;
+console.log('Número destino:', numero);
     console.log('Mensaje recibido:', texto, 'de', numero);
 
     const { data } = await axios.post(

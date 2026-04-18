@@ -26,7 +26,7 @@ app.post('/webhook', async (req, res) => {
     if (!msg || msg.type !== 'text') return;
 
     const texto  = msg.text.body;
-    const numero = '5491131032509';
+    const numero = msg.from;
 console.log('Número destino:', numero);
     console.log('Mensaje recibido:', texto, 'de', numero);
 
